@@ -1,0 +1,13 @@
+[flake8]
+ignore =
+    'E231',
+    # 'f-string without any placeholders' - there are cases of splitted strings where some parts doesn't have
+    # placeholders, but are formatted with f-strings to keep consistency with other f-string formatted parts
+    'F541',
+    # 'Do not assign a lambda expression, use a def' - lambdas allowed due to popularity in DS apps
+    'E731',
+    # 'Line break before binary operator' - follow W504 and use line break before binary operator
+    'W503',
+max-line-length = 120
+max-complexity = 18
+select = B,C,E,F,W,T4,B9
